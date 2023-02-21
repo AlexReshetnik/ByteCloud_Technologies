@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+body {
+    border: 3px solid rgb(0, 128, 255);
+    border-radius: 15px;
+    margin: 20px;
+    max-width: 700px;
+}
+#graphs {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    border-bottom: 5px solid rgb(0, 128, 255);
+}
+.providers {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.prov {
+    width: 200px;
+    height: 50px;
+    margin: 15px;
+    position: relative;
+}
+.radiobox {
+    display: flex;
+}
+.radiobox div {
+    margin: 5px;
+}
+.name_prov {
+}
+
+.icon_prov {
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+.columns {
+    width: 500px;
+    border-radius: 10px;
+    padding: 15px 0;
+    border-left: 5px solid rgb(0, 128, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    background-color: rgb(0, 128, 255);
+    margin: 25px 0px;
+    width: 0px;
+    height: 30px;
+    position: relative;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.price {
+    position: absolute;
+    right: -55px;
+}
+
+/*  ranges  */
+#ranges {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+#ranges div {
+    margin: 20px 70px;
+    display: flex;
+    flex-direction: column;
+}
+#ranges div input {
+    transform: scale(1.5);
+}
+#ranges div h4 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+@media (max-width: 576px) {
+    #graphs {
+        display: flex;
+        flex-direction: column-reverse;
+
+        align-items: center;
+        align-content: flex-start;
+
+        margin: 0;
+    }
+    .providers {
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .prov {
+        position: relative;
+        top: -30px;
+        width: 110px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+    }
+    .name_prov {
+        font-size: 17px;
+    }
+    .radiobox {
+        display: block;
+        text-align: start;
+        position: relative;
+        left: 15px;
+    }
+    .icon_prov {
+        position: absolute;
+        top: -70px;
+        right: 40px;
+    }
+    .columns {
+        margin-top: 10px;
+        width: 250px;
+        transform: rotate(-90deg);
+    }
+    .col {
+        height: 60px;
+        margin: 22px 0px;
+    }
+    #ranges {
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    #ranges div h4 {
+        font-size: 25px;
+    }
+}
