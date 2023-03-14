@@ -1,0 +1,17 @@
+.Cloud {
+    & > * {
+        animation-name: show;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,43 @@
+.Cloud {
+    position: absolute;
+    z-index: 7;
+
+    animation-name: jump;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+   
+    &:hover {
+        * {
+            transition:  0.5s;
+        }
+        & :nth-child(1) {
+            fill: #569be4;
+        }
+        & :nth-child(2) {
+            fill: #84b7ed;
+        }
+        & :nth-child(3) {
+            fill: #7ca8d7;
+        }
+        & :nth-child(4) {
+            fill: #84a8cf;
+        }
+        & :nth-child(5) {
+            fill: #78b3f3;
+        }
+    }
+}
+
+@keyframes jump {
+    from {
+        margin-top: 15px;
+    }
+    50% {
+        margin-top: 0px;
+    }
+    to {
+        margin-top: 15px;
+    }
+}

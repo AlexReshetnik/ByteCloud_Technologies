@@ -1,0 +1,73 @@
+.Arrows {
+  width: 100%;
+  height: 100%;
+  & > svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    & > * {
+      stroke: rgb(174, 42, 42);
+      stroke-width: 1.3px;
+    }
+  }
+}
+
+.red_animation > * {
+  stroke: rgb(174, 42, 42);
+
+  stroke-width: 1.3px;
+  animation-name: dash;
+
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  stroke-dasharray: none;
+}
+
+.blue_animation > * {
+  stroke: rgb(51, 67, 206) !important;
+
+  stroke-width: 1.3px;
+  animation-name: dash2;
+
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  stroke-dasharray: none;
+}
+
+@keyframes dash {
+  from {
+    opacity: 0.3;
+    stroke-dasharray: 35 100;
+    stroke-dashoffset: 1000;
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    stroke-dasharray: 35 100;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: 10000;
+  }
+}
+@keyframes dash2 {
+  from {
+    opacity: 0.3;
+    stroke-dasharray: 35 100;
+    stroke-dashoffset: 1000;
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    stroke-dasharray: 35 100;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: 10000;
+  }
+}
+

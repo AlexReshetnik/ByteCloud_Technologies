@@ -1,0 +1,25 @@
+.Devices {
+    & > * {
+        position: absolute;
+        z-index: 4;
+        animation-name: show;
+        animation-duration: 0.5s;
+        animation-timing-function:ease-in;
+        animation-fill-mode: forwards;
+    
+        & > * {
+            position: absolute;
+           
+        }
+    }
+}
+
+
+@keyframes show {
+    from {
+       opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
