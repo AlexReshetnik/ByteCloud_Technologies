@@ -7,7 +7,7 @@ function Loader() {
     return (
         <>
             {
-                animation.stage == "RED_ANIMATION" ? (
+                (animation.stage == "RED_ANIMATION" || animation.stage == "BLUE_ANIMATION") ? (
 
                     < div className='Loader' >
                         <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
